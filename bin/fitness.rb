@@ -53,8 +53,9 @@ results = Parallel.map(Battleship::SAMPLE_BOARDS) { |positions|
 
 results.extend(Stats)
 
-puts "mean: %.1f" % results.mean
+puts "mean: %.3f" % results.mean
 puts "median: %d" % results.median
 puts "min: %d" % results.min
 puts "max: %d" % results.max
-puts "sd: %.1f" % results.std_dev
+puts "sd: %.3f" % results.std_dev
+puts "results: #{results.inspect}"

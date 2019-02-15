@@ -55,9 +55,9 @@ module Battleship
   class DeluxeConsoleRenderer < ConsoleRenderer
 
     ICONS = {
-      :unknown => "· ",
-      :hit     => "█▉".red,
-      :miss    => "▒▒".cyan
+      :unknown => "~",
+      :hit     => "X".red,
+      :miss    => ".".cyan
     }
 
   private
@@ -67,7 +67,7 @@ module Battleship
 
     def render_ship(length)
       return "" unless length
-      "█▉" * length
+      "[]" * length
     end
 
   end

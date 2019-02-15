@@ -7,6 +7,7 @@ The game:
 
 Long version: [see wikipedia](https://secure.wikimedia.org/wikipedia/en/wiki/Battleship_game)
 
+* Create a directory in 'contestants/' with your team name, and within that a file called 'player.rb'.
 * Each player starts with a fleet of 5 ships, of length 5, 4, 3, 3, and 2.
 * Each player places their ships horizontally or vertically on a 10x10 grid; this is not visible to their opponent.
 * Players take turns to fire at positions on the grid, gradually revealing where their opponent’s ships are and are not located.
@@ -23,7 +24,8 @@ You lose if:
 ### Additional rules
 
 * The official interpreter is Ruby 2.1.0.
-* The player will not have access to the game objects.
+* Contestants enter via a PR to this repo.
+* The player will not have access to the game objects, this includes the server code.
 * The player may `require` Ruby source files from within a `lib` directory in the same place as the player file (i.e. `contestants/player.rb` can use `contestants/lib/foo/bar.rb` via `require "foo/bar"`.)
 * A file should not implement more than one player class.
 * The judge’s decision is final.
