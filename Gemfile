@@ -5,3 +5,4 @@ gem "parallel"
 gem "minitest"
 gem "rake"
 gem "pry"
+gem 'byebug'

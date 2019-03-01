@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (9.0.6)
     coderay (1.1.0)
     colored (1.2)
     metaclass (0.0.2)
@@ -20,9 +21,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   colored
   minitest
   mocha
   parallel
   pry
   rake
+
+BUNDLED WITH
+   1.16.2
